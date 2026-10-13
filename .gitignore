@@ -1,0 +1,46 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Any folder whose name starts with an underscore (e.g. _sources/, _images/)
+_*/
+
+# Project policy exclusions
+AGENTS.md
+.bob/mcp.json
+.playwright-mcp/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+
+# Large / binary artefacts
+*.onnx
+*.onnx.data
+*.so
+*.tgz
+*.tar.gz
+*.zip
+*.dylib
+
+# input/ and output/ folders are synced, their content is not
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
+# Runtime
+.run/
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
